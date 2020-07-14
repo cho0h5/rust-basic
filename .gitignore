@@ -1,2 +1,4 @@
-*/*/targt/*
-*/*/.git/*
+*/*/targt/
+*/*/.git/
+
+Cargo.lock
