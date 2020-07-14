@@ -1,10 +1,11 @@
 fn main() {
     let s = String::from("hello");
 
-    print_string(s);
+    let s = print_string(s);
     print_string(s);
 }
 
-fn print_string(s: String) {
+fn print_string(s: String) -> String {
     println!("{}", s);
+    s
 }
