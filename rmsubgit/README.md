@@ -1,1 +1,1 @@
-# Remove Cargos's .git directory
+# Automatically remove Cargo's .git directory
