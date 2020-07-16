@@ -1,16 +1,12 @@
 fn main() {
-    let s = String::from("hello");
+    let mut s = String::from("hello");
 
-    let (s, len) = len_string(s);
-    println!("{} {}", s, len);
-}
+    let r1 = &s;
+    let r2 = &s;
+    //let r3 = &mut s;
+    //r3.push_str(", world!");
 
-fn print_string(s: String) -> String {
-    println!("{}", s);
-    s
-}
-
-fn len_string(s: String) -> (String, usize) {
-    let len = s.len();
-    (s, len)
+    println!("r1: {}", r1);
+    println!("r2: {}", r2);
+    //println!("r3: {}", r3);
 }
