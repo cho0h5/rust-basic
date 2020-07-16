@@ -1,12 +1,22 @@
 fn main() {
-    let mut s = String::from("hello");
+    let mut s = String::from("hello world");
 
-    let r1 = &s;
-    let r2 = &s;
-    //let r3 = &mut s;
-    //r3.push_str(", world!");
+    let word = first_word(&s);
 
-    println!("r1: {}", r1);
-    println!("r2: {}", r2);
-    //println!("r3: {}", r3);
+    //s.clear();
+
+    println!("{} {}", s, word);
+
+}
+
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[..i];
+        }
+    }
+
+    &s[..]
 }
