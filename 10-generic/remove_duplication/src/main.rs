@@ -3,9 +3,14 @@ fn main() {
 
     let largest = largest(&numbers);
     println!("The largest number is {}", largest);
+
+    let chars = vec!['a', 'g', 'x', 'b'];
+
+    let largest = largest(&chars);
+    println!("The largest char is {}", largest);
 }
 
-fn largest(list: &[i32]) -> i32 {
+fn largest<T>(list: &[T]) -> T {
     let mut largest = list[0];
 
     for &item in list.iter() {
