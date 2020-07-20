@@ -1,5 +1,6 @@
 [package]
 name = "art010"
+license = "MIT OR Apache-2.0"
 version = "0.1.0"
 authors = ["Youngho Cho <dominoyh5@gmail.com>"]
 edition = "2018"
