@@ -1,7 +1,5 @@
 fn main() {
-    let v = vec!['a', 'b', 'c'];
+    let Some(x) = Some(5);
 
-    for (index, value) in v.iter().enumerate() {
-        println!("{} is at index {}", value, index);
-    }
+    println!("{}", x);
 }
