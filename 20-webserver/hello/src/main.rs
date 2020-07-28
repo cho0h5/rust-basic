@@ -29,4 +29,5 @@ fn handle_connection(mut stream: TcpStream) {
 
     println!("Request");
     println!("{}", contents);
+
 }
